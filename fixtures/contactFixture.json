@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "firstName": "David",
+    "lastName": "Smith",
+    "dob": "1995-04-15",
+    "email": "davidsmith@example.com",
+    "phone": "9800000000",
+    "address": "New Address",
+    "city": "Kathmandu",
+    "state": "Bagmati",
+    "postal": "44600",
+    "country": "Nepal"
+  },
+
+  "contactEdit": {
+    "firstName": "David"
+  }
+}
