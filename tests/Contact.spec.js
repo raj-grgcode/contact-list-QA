@@ -1,4 +1,3 @@
-
 import { test } from "@playwright/test";
 import { LoginPage } from "../Page_object/login.po";
 import { ContactPage } from "../Page_object/contact.po";
@@ -36,9 +35,9 @@ test.describe("Valid contact tests", () => {
             contactTestData.contact.postal,
             contactTestData.contact.country,
         );
-        await contact.viewContact(contactTestData.contact.firstName, contactTestData.contact.lastName);
+        await contact.viewContact(uniqueFirstName, contactTestData.contact.lastName);
         await contact.validateContactCreated(
-            contactTestData.contact.firstName,
+            uniqueFirstName,
             contactTestData.contact.lastName,
             contactTestData.contact.dob,
             contactTestData.contact.email,
