@@ -22,9 +22,10 @@ test.beforeEach(async ({ page }) => {
 test.describe("Valid contact tests", () => {
     test("Contact Add test", async ({ page }) => {
         const contact = new ContactPage(page);
+        const uniqueFirstName = `${contactTestData.contact.firstName}_${Date.now()}`;
 
         await contact.addContact(
-            contactTestData.contact.firstName,
+            uniqueFirstName,
             contactTestData.contact.lastName,
             contactTestData.contact.dob,
             contactTestData.contact.email,
